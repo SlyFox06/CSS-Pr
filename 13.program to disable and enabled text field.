@@ -1,0 +1,24 @@
+13.	Write a program to disable and enabled text field.
+ <html>
+<head>
+    <title>Disable/Enable Text Field</title>
+</head>
+<body>
+    <h2>Disable/Enable Text Field</h2>
+    <input type="text" id="textField">
+    <button onclick="disableTextField()">Disable Text Field</button>
+    <button onclick="enableTextField()">Enable Text Field</button>
+
+    <script>
+        const textField = document.getElementById('textField');
+
+        function disableTextField() {
+            textField.disabled = true;
+        }
+
+        function enableTextField() {
+            textField.disabled = false;
+        }
+    </script>
+</body>
+</html>
