@@ -1,0 +1,30 @@
+
+Write a code that accepts username and Aadhar card as input texts. When the user enters Aadhar-card number, the javascript validates card number and displays whether card number is valid or not.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadhar Card Validation</title>
+</head>
+<body>
+<h2>Aadhar Card Validation</h2>
+<label for="username">Username:</label>
+<input type="text" id="username" placeholder="Enter your username">
+<label for="aadharCard">Aadhar Card Number:</label>
+<input type="text" id="aadharCard" placeholder="Enter Aadhar card number" oninput="validateAadharCard()">
+<p id="validationResult"></p>
+<script>
+function validateAadharCard() {
+// Get Aadhar card number from input
+var aadharCardNumber = document.getElementById("aadharCard").value;
+// Validate Aadhar card number (for demonstration, checking if it has 12 digits)
+if (/^\d{12}$/.test(aadharCardNumber)) {
+document.getElementById("validationResult").innerText = "Aadhar Card is valid.";
+} else {
+document.getElementById("validationResult").innerText = "Aadhar Card is not valid. Please enter a 12-digit number.";
+}
+}
+</script>
+</body>
+</html>
