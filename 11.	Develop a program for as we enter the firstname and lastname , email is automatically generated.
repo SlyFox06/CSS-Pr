@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+     
+    <title>Email Generator</title>
+</head>
+<body>
+    <h2>Email Generator</h2>
+
+   First Name: <input type="text" id="firstName" placeholder="Enter your first name">
+
+ Last Name: <input type="text" id="lastName" placeholder="Enter your last name">
+
+    <button onclick="generateEmail()">Generate Email</button>
+
+    <p id="generatedEmail"></p>
+
+    <script>
+        function generateEmail() {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var generatedEmail = document.getElementById('generatedEmail');
+
+            // Check if both first name and last name are provided
+            if (firstName && lastName) {
+                // Concatenate first name and last name to generate the email
+                var email = firstName.toLowerCase() + '.' + lastName.toLowerCase() + '@gmail.com';
+                
+                // Set the innerHTML to display the generated email
+                generatedEmail.innerHTML = 'Generated Email: ' + email;
+            } else {
+                generatedEmail.innerHTML = 'Please enter both first name and last name.';
+            }
+        }
+    </script>
+</body>
+</html>
