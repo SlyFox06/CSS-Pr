@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rollover Image Effect</title>
+<style>
+.image-container {
+display: flex;
+}
+.rollover-image {
+width: 150px; /* Set the width of the images */
+height: 150px; /* Set the height of the images */
+margin: 10px; /* Add some spacing between images */
+transition: transform 0.3s ease; /* Smooth transition effect */
+cursor: pointer; /* Change cursor to pointer on hover */
+}
+.rollover-image:hover {
+transform: scale(1.2); /* Scale the image up on hover */
+}
+</style>
+</head>
+<body>
+<h2>Hover over the images to see the rollover effect</h2>
+<!-- Container for the images -->
+<div class="image-container">
+<!-- Set of 4 images with rollover effect -->
+<img src="image1.jpg" alt="Image 1" class="rollover-image">
+<img src="image2.jpg" alt="Image 2" class="rollover-image">
+<img src="image3.jpg" alt="Image 3" class="rollover-image">
+<img src="image4.jpg" alt="Image 4" class="rollover-image">
+</div>
+</body>
+</html>
