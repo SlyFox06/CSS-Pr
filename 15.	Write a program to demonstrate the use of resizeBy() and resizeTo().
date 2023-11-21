@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Resize Demo</title>
+</head>
+<body>
+    <button onclick="resizeWindowBy()">Resize Window By</button>
+    <button onclick="resizeWindowTo()">Resize Window To</button>
+
+    <script>
+        let myWindow;
+       
+        function openNewWindow() {
+            myWindow = window.open('', 'myWindow', 'width=400,height=300');
+        }
+       
+        function resizeWindowBy() {
+            if (!myWindow) {
+                openNewWindow();
+            }
+            myWindow.resizeBy(200, 100); 
+        }
+       
+        function resizeWindowTo() {
+            if (!myWindow) {
+                openNewWindow();
+            }
+            myWindow.resizeTo(800, 600); 
+                   }
+    </script>
+</body>
+</html>
+
+
