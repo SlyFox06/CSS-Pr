@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+Write a program to count the number of vowels into the string?
+function countVowels(str) {
+const lowercasedStr = str.toLowerCase();
+const vowels = new Set(['a', 'e', 'i', 'o', 'u']);
+let vowelCount = 0;
+for (let char of lowercasedStr) {
+if (vowels.has(char)) {
+vowelCount++;
+}
+}
+return vowelCount;
+}
+let userInput = prompt("Enter a string to count the number of vowels:");
+let result = countVowels(userInput);
+console.log(`The number of vowels in "${userInput}" is: ${result}`);
+</script>
+</body>
+</html>
