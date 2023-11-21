@@ -1,0 +1,43 @@
+7.	Write a program to create the registration form for creating gmail account.
+<!DOCTYPE html>
+<html  >
+<head>
+ 
+    <title>Gmail Registration Form</title>
+   
+</head>
+<body>
+
+<form>
+    <h2>Create your Google Account</h2>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <br> <br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <br> <br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label>
+    <br> <br>
+
+    <label for="username">Choose your username:</label>
+    <input type="text" id="username" name="username" required>
+    <br> <br>
+
+    <label for="password">Create a password:</label>
+    <input type="password" id="password" name="password" required>
+    <br> <br>
+
+    <input type="submit" value="Next">
+</form>
+
+</body>
+</html>
