@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+<title>JavaScript Regular expression to valid an email address</title>
+
+</head>
+
+<body>
+
+<script>
+
+function validemail(){
+    var str=document.getElementById("ans").value;
+
+var mailformat = /^[A-z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+if(mailformat.test(str))
+
+alert("Valid email address!");
+
+else
+
+alert("INValid email address!");
+}
+
+
+
+
+
+</script>Enter your email:
+<input type="text" id="ans">
+<button onclick="validemail()">Valid</button>
+</body>
+
+</html>
+</script>
+
+</body>
