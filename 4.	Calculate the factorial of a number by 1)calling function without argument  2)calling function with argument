@@ -1,0 +1,17 @@
+4.	Calculate the factorial of a number by
+1)calling function without argument
+
+2)calling function with argument.
+<html>
+     <body> 
+        <script>
+         function IncreaseSalary(OldSalary, PercIncrease)
+          { 
+            var NewSalary = OldSalary * (1 + (PercIncrease / 100))
+             alert("Your new salary is " + NewSalary)
+             } var Salary = prompt('Enter old salary.', ' ')
+              var Increase = prompt('Enter salary increase as percent.', ' ') 
+              IncreaseSalary(Salary, Increase) 
+              </script>
+               </body> 
+               </html>
