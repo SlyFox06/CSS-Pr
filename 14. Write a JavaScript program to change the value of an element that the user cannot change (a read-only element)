@@ -1,0 +1,28 @@
+14.
+Write a JavaScript program to change the value of an element that the user cannot change (a read-only element)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Read-Only Element Value</title>
+<style>
+input {
+margin-bottom: 10px;
+padding: 8px;
+}
+</style>
+</head>
+<body>
+<h2>Change Read-Only Element Value</h2>
+<label for="readOnlyElement">Read-Only Element:</label>
+<input type="text" id="readOnlyElement" value="Initial Value" readonly>
+<button onclick="changeValue()">Change Value</button>
+<script>
+function changeValue() {
+var readOnlyElement = document.getElementById("readOnlyElement");
+readOnlyElement.value = "New Value";
+}
+</script>
+</body>
+</html>
