@@ -1,0 +1,19 @@
+<html>
+     <head> 
+    <script  >
+         function highlight(x)
+          {
+             x.style.color="blue";
+             x.style.backgroundColor="pink"; 
+           } 
+           </script>
+            </head>
+            <body> 
+                <form   > 
+                    Institute Name: <input type="text" name="iname" onchange="highlight(this)"/>
+                     <BR>
+                         Program: <input type="text" name="infotech" onchange="highlight(this)"/> 
+                         <br> 
+                         <input type="submit" value="submit" name="submit">
+    
+    </form> </body> </html>
