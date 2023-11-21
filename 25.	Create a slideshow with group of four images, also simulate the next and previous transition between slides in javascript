@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Banners</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        MyBanners = new Array('images/banner1.jpg', 'images/banner2.jpg', 'images/banner3.jpg', 'images/banner4.jpg', 'images/banner5.jpg')
+        bannerCounter = 0;
+
+        function next() {
+            document.getElementById("changeBanner").src = MyBanners[bannerCounter++];
+            if (bannerCounter == MyBanners.length) {
+                bannerCounter = 0;
+            }
+        }
+
+        function prev() {
+            document.getElementById("changeBanner").src = MyBanners[bannerCounter--];
+            if (bannerCounter == -1) {
+                bannerCounter = MyBanners.length - 1
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>6.3 Slideshow</h1>
+    <div class="center">
+        
+            <img src="images/banner1.jpg" id="changeBanner" />
+     
+        <br><br>
+        <button onclick="prev()"> PREV</button>
+        <button onclick="next()">NEXT </button>
+    </div>
+</body>
+
+</html>
