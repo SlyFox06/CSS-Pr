@@ -1,1 +1,58 @@
+<html>
+<body>
+<script>
+function isLeapYear(year) {
 
+
+ if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+
+
+ return true;
+
+
+ } else {
+
+
+ return false;
+
+
+ }
+
+
+}
+
+
+let userInput = prompt("Enter a year to check if it's a leap year:");
+
+
+let year = parseInt(userInput);
+
+
+if (isNaN(year)) {
+
+
+ console.log("Invalid input. Please enter a valid year.");
+
+
+} else {
+
+
+ if (isLeapYear(year)) {
+
+
+ console.log(`${year} is a leap year.`);
+
+
+ } else {
+
+
+ console.log(`${year} is not a leap year.`);
+
+
+ }
+
+
+}
+</script>
+</body>
+</html>
