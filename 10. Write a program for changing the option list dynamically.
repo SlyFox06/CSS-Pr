@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Changing Option List Dynamically</title>
+</head>
+<body>
+<h2>Changing Option List Dynamically</h2>
+<label for="fruitSelect">Select a Fruit:</label>
+<select id="fruitSelect"></select>
+<button onclick="changeOptions()">Change Options</button>
+<script>
+function changeOptions() {
+var selectElement = document.getElementById("fruitSelect");
+selectElement.innerHTML = "";
+var fruits = ["Apple", "Banana", "Orange", "Grapes"];
+for (var i = 0; i < fruits.length; i++) {
+var option = document.createElement("option");
+option.text = fruits[i];
+selectElement.add(option);
+}
+}
+</script>
+</body>
+</html>
