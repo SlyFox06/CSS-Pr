@@ -1,0 +1,32 @@
+17.
+Writing a number after a delay using setInterval ( ) method. In this example, numbers are displayed in a textarea after a 1 second.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Numbers After Delay</title>
+<style>
+textarea {
+width: 300px;
+height: 200px;
+}
+</style>
+</head>
+<body>
+<h2>Display Numbers After Delay</h2>
+<textarea id="numberTextArea" readonly></textarea>
+<script>
+let counter = 1;
+function displayNumber() {
+let textarea = document.getElementById("numberTextArea");
+textarea.value += counter + "\n";
+counter++;
+if (counter > 10) {
+clearInterval(intervalId);
+}
+}
+const intervalId = setInterval(displayNumber, 1000);
+</script>
+</body>
+</html>
