@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<script>
+
+
+function changeImageSource() {
+
+
+// Get the image element by its ID
+
+
+var imageElement = document.getElementById("myImage");
+
+
+// New source URL
+
+
+var newSource = "new_image.jpg";
+
+
+// Change the src attribute dynamically
+
+
+imageElement.setAttribute("src", newSource);
+
+
+}
+
+
+</script>
+
+
+<body>
+
+
+<h1>Dynamic Attribute Change</h1>
+
+
+<img id="myImage" src="old_image.jpg" alt="Old Image">
+
+
+<br>
+
+
+<button onclick="changeImageSource()">Change Image Source</button>
+
+
+</body>
+
+
+</html>
