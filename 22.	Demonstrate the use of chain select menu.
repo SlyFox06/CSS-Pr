@@ -1,0 +1,46 @@
+22.	Demonstrate the use of chain select menu.
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Chained Select Menu</title>
+</head>
+<body>
+    <h2>Chained Select Menu</h2>
+    <label for="category">Select Category:</label>
+    <select id="category" onchange="populateSubcategories()">
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+    </select>
+
+    <label for="subcategory">Select Subcategory:</label>
+    <select id="subcategory"></select>
+
+    <script>
+        function populateSubcategories() {
+            var catSelect = document.getElementById('category');
+            var subSelect = document.getElementById('subcategory');
+            var selectedCat = catSelect.value;
+            subSelect.innerHTML = ''; // Clear previous options
+
+            if (selectedCat === 'fruits') {
+                var fruits = ['Apple', 'Banana', 'Orange'];
+                for (var i = 0; i < fruits.length; i++) {
+                    var option = document.createElement('option');
+                    option.textContent = fruits[i];
+                    subSelect.appendChild(option);
+                }
+            } else if (selectedCat === 'vegetables') {
+                var vegetables = ['Carrot', 'Broccoli', 'Spinach'];
+                for (var i = 0; i < vegetables.length; i++) {
+                    var option = document.createElement('option');
+                    option.textContent = vegetables[i];
+                    subSelect.appendChild(option);
+                }
+            }
+        }
+
+        // Populate subcategories initially based on default category selection
+        populateSubcategories();
+    </script>
+</body>
+</html>
