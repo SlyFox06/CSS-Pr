@@ -1,0 +1,35 @@
+<html>
+
+
+<body>
+
+
+Enter some text:
+
+
+<input type="text" name="txt" value="Hello" onchange="myFunction(this.value)">
+
+
+<script>
+
+
+function myFunction(val)
+
+
+{
+
+
+alert("The input value has changed. The new value is: " + val);
+
+
+}
+
+
+</script>
+
+
+</body>
+
+
+</html>
+
