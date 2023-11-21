@@ -1,0 +1,24 @@
+
+Create a rollover effect that can change the color of its text.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rollover Effect - Easiest Way</title>
+<style>
+.rollover-text {
+color: #333;
+cursor: pointer;
+}
+.rollover-text:hover {
+color: #ff6347;
+}
+</style>
+</head>
+<body>
+<h2>Hover over the text to see the rollover effect (Easiest Way)</h2>
+<!-- Text with rollover effect -->
+<p class="rollover-text">This text will change color on hover.</p>
+</body>
+</html>
