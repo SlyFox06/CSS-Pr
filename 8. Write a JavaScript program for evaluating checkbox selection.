@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkbox Evaluation</title>
+<style>
+label {
+display: block;
+margin-bottom: 8px;
+}
+</style>
+</head>
+<body>
+<h2>Checkbox Evaluation</h2>
+<label>
+<input type="checkbox" id="checkbox1"> Checkbox 1
+</label>
+<label>
+<input type="checkbox" id="checkbox2"> Checkbox 2
+</label>
+<label>
+<input type="checkbox" id="checkbox3"> Checkbox 3
+</label>
+<button onclick="evaluateCheckboxes()">Evaluate Selection</button>
+<script>
+function evaluateCheckboxes() {
+var checkbox1 = document.getElementById("checkbox1");
+var checkbox2 = document.getElementById("checkbox2");
+var checkbox3 = document.getElementById("checkbox3");
+var result = "Checkbox Selection:\n";
+result += "Checkbox 1: " + (checkbox1.checked ? "Selected" : "Not Selected") + "\n";
+result += "Checkbox 2: " + (checkbox2.checked ? "Selected" : "Not Selected") + "\n";
+result += "Checkbox 3: " + (checkbox3.checked ? "Selected" : "Not Selected") + "\n";
+alert(result);
+}
+</script>
+</body>
+</html>
